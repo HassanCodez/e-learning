@@ -43,7 +43,7 @@ const postData: DataType[] = [
     heading: "Translation",
     heading2: "Arabic to English",
     name: "Omar Haddad",
-    imgSrc: "/assets/courses/translation.jpg",
+    imgSrc: "/assets/courses/Translation.jpg",
     students: 150,
     classes: 7,
     price: 20,
@@ -121,7 +121,7 @@ export default class MultipleItems extends Component {
             {postData.map((items, i) => (
               <div key={i}>
                 <div className="bg-white m-3 px-3 pt-3 pb-12 my-20 shadow-courses rounded-2xl">
-                  <div className="relative rounded-3xl">
+                  <div className="relative rounded-3xl h-[450px]">
                     <Image
                       src={items.imgSrc}
                       alt="gaby"
@@ -140,7 +140,7 @@ export default class MultipleItems extends Component {
                     <h4 className="text-2xl font-bold pt-6 text-black">
                       {items.heading}
                     </h4>
-                    <h4 className="text-2xl font-bold pt-1 text-black">
+                    <h4 className="text-xl font-bold pt-1 text-black">
                       {items.heading2}
                     </h4>
 
