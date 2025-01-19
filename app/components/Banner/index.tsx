@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SubmitButton from "../SubmitButton";
 
 const Banner = () => {
   return (
@@ -34,17 +35,7 @@ const Banner = () => {
                   autoComplete="off"
                 />
                 <div className="absolute inset-y-0 right-0 flex items-center pr-6 pt-5 lg:pt-0">
-                  <button
-                    type="submit"
-                    className="p-3 lg:p-5 focus:outline-none focus:shadow-outline bg-ultramarine hover:bg-midnightblue duration-150 ease-in-out rounded-full"
-                  >
-                    <Image
-                      src={"/assets/newsletter/send.svg"}
-                      alt="send-icon"
-                      width={30}
-                      height={30}
-                    />
-                  </button>
+                  <SubmitButton />
                 </div>
               </div>
             </div>
